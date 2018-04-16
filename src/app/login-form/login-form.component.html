@@ -1,0 +1,17 @@
+<form #signOutForm="ngForm" (ngSubmit)="signOut()" *ngIf="userName">
+  <span>Bienvenue {{userName}} !</span>
+  <button type="submit" class="ui button">
+      Se déconnecter
+      <i class="fa fa-sign-out"></i>
+  </button>
+</form>
+<form #f="ngForm" (ngSubmit)="signIn(f.value)" class="ui form" *ngIf="!userName">
+  <label for="utilisateurInput">Utilisateur</label>
+  <input type="text" id="utilisateurInput" name="utilisateur" pInputText placeholder="Utilisateur" ngModel>
+  <label for="mdpInput">Mot de passe</label>
+  <input type="text" id="mdpInput" name="mdp" pInputText placeholder="Mot de passe" ngModel>
+  <button type="submit" class="ui button">
+    Se connecter
+    <i class="fa fa-sign-in"></i>
+  </button>
+</form>
