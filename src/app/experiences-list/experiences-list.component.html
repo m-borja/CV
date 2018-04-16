@@ -1,0 +1,19 @@
+<!-- <div class="ui items">
+  <app-experience-row
+    *ngFor="let myExperience of experiences"
+    [experience]="myExperience"
+    (click)='clicked(myExperience)'
+    [class.selected]="isSelected(myExperience)">
+  </app-experience-row>
+</div> -->
+<p-dataView [value]="experiences">
+  <p-header>Liste des expériences</p-header>
+  <p-footer>Choisir dans la liste.</p-footer>
+  <ng-template let-experience pTemplate="listItem">
+      <app-experience-row
+        [experience]="experience"
+        (click)='clicked(experience)'
+        [class.selected]="isSelected(experience)">
+      </app-experience-row>
+  </ng-template>
+</p-dataView>

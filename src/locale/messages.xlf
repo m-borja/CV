@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="fr" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="cv.placeholder.i18n" datatype="html">
+        <source>Sélectionner une langue</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/cvaccordion/cvaccordion.component.ts</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+        <note priority="1" from="description">Language</note>
+        <note priority="1" from="meaning">Placeholder language</note>
+      </trans-unit>
+      <trans-unit id="cv.mission.presentation" datatype="html">
+        <source>
+          La gamme offre de services gère entre autres l’application PAJE (Prestation d’accueil du jeune
+          enfant) qui alloue une aide financière pour la garde des enfants.
+        </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/cvaccordion/cvaccordion.component.ts</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+        <note priority="1" from="description">Mission Acoss gamme ODS</note>
+        <note priority="1" from="meaning">Présentation mission</note>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
